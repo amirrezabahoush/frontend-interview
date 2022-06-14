@@ -45,6 +45,8 @@ if (visibleItem === 3) {
 	console.log(fullName);
 }
 
+// reference: https://www.javascripttutorial.net/javascript-this/
+
 // <--------------------------------------------------------------------------->
 
 //4

@@ -4,10 +4,16 @@ const visibleQuestion = 1;
 // const arr = [1,2,3,4,5,6,7,...,600000000000000];
 
 //2
-if(visibleQuestion === 2) {
-  function twoSum(list, n) {
-    //?
+const findIndexesByObject = (array, number) => {
+  let objectStructure = {};
+  array.forEach((item, index) => {
+    objectStructure[item] = index;
+  if (objectStructure[number - item]) {
+    console.log(objectStructure[item], objectStructure[number - item])
   }
-  
-  console.log(twoSum([1,3,8,0, 12], 13)) //=> 1,2
-}
+  });
+};
+
+findIndexesByObject([2, 3, 7, 12, 1], 15); //=> 1,3
+
+//
